@@ -1,0 +1,175 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 1);
+}
+nav > div {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.nav-Icon {
+  width: 30px;
+  height: 30px;
+  background-color: whitesmoke;
+}
+.gradient-text {
+    background-image: conic-gradient(#fa2605, #3977f3);
+}
+.sideNav-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 15px;
+  color: whitesmoke;
+}
+
+.card-balance {
+  position: relative;
+  background-color: rgba(0, 128, 0, 0.7);
+  color: whitesmoke;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 25%;
+  max-width: 20%;
+}
+.balance-icon {
+  position: absolute;
+  top: 35px;
+  right: 25px;
+}
+.transaction-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+}
+.transaction-btn:hover {
+  background-color: rgba(78, 116, 231, 1);
+}
+.btn-yellow {
+  background-color: yellow;
+}
+
+.transaction-details {
+  margin-top: 10px;
+  margin-left: 25%;
+  width: 40%;
+  padding: 15px 0px;
+}
+.transaction-card {
+  background-color: black;
+  color: whitesmoke;
+  padding: 5px 15px;
+}
+.transaction-card--header {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding-bottom: 20px;
+  margin: 10px 0;
+  font-size: 22px;
+  position: relative;
+}
+.text-yellow{
+font-size: 16px;
+color: yellow;
+cursor: pointer;
+}
+.text-white{
+    font-size: 16px;
+    color: white;   
+}
+.flex-column{
+display: flex;
+flex-direction: column;
+position: absolute;
+top: -5px;
+left:30px;
+font-size: 18px;
+}
+
+.add-money{
+    width: 25%;
+    border: 3px solid gray;
+    border-right: 0px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+.select-amount{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.select-amount>li{
+    box-sizing: border-box;
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.deposite-amount{
+    width: 93%;
+    margin-left: 10px;
+}
+.my-bank{
+    color: white;
+}
+

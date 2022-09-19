@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growpital project</title>
+    <link rel="stylesheet" href="./mainFrame.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav">
+          <div class="gradient-text">Growpital</div>
+          <div>Home</div>
+          <div>About</div>
+          <div>Service</div>
+          <div>Contact US</div>
+          <img
+            src="../../assets/bellIcon.svg"
+            alt="bell Icon"
+            class="nav-Icon"
+          />
+          <img
+            src="../../assets/userIcon.svg"
+            alt="User Icon"
+            class="nav-Icon"
+          />
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#"
+            ><img
+              src="../../assets/homeIcon.svg"
+              alt="Home"
+              class="sideNav-icon"
+            />
+            Home</a
+          >
+          <a href="#"
+            ><img
+              src="../../assets/portfolioIcon.svg"
+              alt="Portfolio"
+              class="sideNav-icon"
+            />
+            Portfolio</a
+          >
+          <a href="#"
+            ><img
+              src="../../assets/investIcon.svg"
+              alt="Invest"
+              class="sideNav-icon"
+            />
+            Invest</a
+          >
+          <a href="#"
+            ><img
+              src="../../assets/supportIcon.svg"
+              alt="support"
+              class="sideNav-icon"
+            />
+            Support</a
+          >
+        </div>
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+      </nav>
+    </header>
+    <div class="card-balance">
+      <h3>Your Balance</h3>
+      <div>Rs.495</div>
+      <div class="balance-icon">
+        <img src="../../assets/rupee.svg" alt="rupee Icon" class="nav-Icon" />
+      </div>
+      <div>
+        <button class="transaction-btn btn-yellow">Add Money</button>
+        <button class="transaction-btn">Withdraw</button>
+      </div>
+    </div>
+    <div class="transaction-details">
+      <div class="transaction-card">
+        <div class="transaction-card--header">
+          <span>Transaction</span>
+          <span class="text-yellow">View all</span>
+        </div>
+        <div class="transaction-card--header">
+          <img
+            src="../../assets/progress.svg"
+            alt="progress"
+            class="sideNav-icon"
+          />
+          <div class="flex-column">
+            <span>Youtube Premium</span>
+            <span>20th March 2022</span>
+          </div>
+          <div>$200</div>
+        </div>
+        <div class="transaction-card--header">
+          <img
+            src="../../assets/progress.svg"
+            alt="progress"
+            class="sideNav-icon"
+          />
+          <div class="flex-column">
+            <span>Netflix Subscription</span>
+            <span>20th June 2022</span>
+          </div>
+
+          <div>$430</div>
+        </div>
+      </div>
+    </div>
+    <div class="add-money">
+      <p class="deposite-amount text-white">Add Money</p>
+      <input
+        type="number"
+        class="deposite-amount"
+        placeholder="Enter amount to add $1000"
+        min="50"
+      />
+      <ul class="select-amount">
+        <li>$500</li>
+        <li>$1000</li>
+        <li>$1500</li>
+        <li>$2000</li>
+      </ul>
+      <div class="transaction-card--header">
+        <img src="../../assets/Bank.svg" alt="Bank" class="sideNav-icon" />
+        <div class="flex-column text-white">
+          <span>Send money to bank</span>
+          <span>RTGS/NEFT/IMPS?</span>
+        </div>
+        <div class="text-yellow">Know more</div>
+      </div>
+      <button class="deposite-amount transaction-btn btn-yellow">
+        continue
+      </button>
+    </div>
+    <script src="./mainFrame.js"></script>
+  </body>
+</html>
